@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading system</title>
+    <link rel="stylesheet" href="gradingsystem.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="free-me">
+            <div class="display">
+
+                <div class="total">
+                    <h1>OVER-ALL-SCORE</h1>
+                    <p id="overal-dis"></p>
+                </div>
+                <h1>Grading sytem</h1>
+                <div class="total">
+                    <h1>AVERAGE</h1>
+                    <p id="average-dis"></p>
+                </div>
+
+            </div>
+
+            <div class="info-name">
+                <label for="first-name">FirstName</label>
+                <input type="text" name="first-name" placeholder="First Name" id="first-name">
+                <label for="last-name">LastName</label>
+                <input type="text" name="Last-name" placeholder="Last Name" id="Last-name">
+                <h2>Total</h2>
+                <h1>Grade</h1>
+            </div>
+            <section class="section1">
+                <div class="eng">
+                    <label for="eng">English</label>
+                    <input type="number" name="eng" placeholder="Attendance" id="eng">
+                    <input type="number" name="eng" placeholder="CA" id="eng2">
+                    <input type="number" name="eng" placeholder="Exam" id="eng3">
+                    <input type="number" name="eng" id="eng4">
+                    <p id="grade-eng"></p>
+                </div>
+                <div class="math">
+                    <label for="math">Mathematics</label>
+                    <input type="number" name="math" placeholder="Attendance" id="math">
+                    <input type="number" name="math" placeholder="CA" id="math2">
+                    <input type="number" name="math" placeholder="Exam" id="math3">
+                    <input type="number" name="math" id="math4">
+                    <p id="grade-math"></p>
+                </div>
+                <div class="phys">
+                    <label for="phys">Physics</label>
+                    <input type="number" name="phys" placeholder="Attendance" id="phys">
+                    <input type="number" name="phys" placeholder="CA" id="phys2">
+                    <input type="number" name="phys" placeholder="Exam" id="phys3">
+                    <input type="number" name="phys" id="phys4">
+                    <p id="grade-phys"></p>
+                </div>
+                <div class="chem">
+                    <label for="chem">Chemistry</label>
+                    <input type="number" name="chem" placeholder="Attendance" id="chem">
+                    <input type="number" name="chem" placeholder="CA" id="chem2">
+                    <input type="number" name="chem" placeholder="Exam" id="chem3">
+                    <input type="number" name="chem" id="chem4">
+                    <p id="grade-chem"></p>
+                </div>
+                <div class="bio">
+                    <label for="bio">Biology</label>
+                    <input type="number" name="bio" placeholder="Attendance" id="bio">
+                    <input type="number" name="bio" placeholder="CA" id="bio2">
+                    <input type="number" name="bio" placeholder="Exam" id="bio3">
+                    <input type="number" name="bio" id="bio4">
+                    <p id="grade-bio"></p>
+                </div>
+                <div class="agric">
+                    <label for="agric">Agric Science</label>
+                    <input type="number" name="agric" placeholder="Attendance" id="agric">
+                    <input type="number" name="agric" placeholder="CA" id="agric2">
+                    <input type="number" name="agric" placeholder="Exam" id="agric3">
+                    <input type="number" name="agric" id="agric4">
+                    <p id="grade-agric"></p>
+                </div>
+                <div class="eco">
+                    <label for="eco">Economics</label>
+                    <input type="number" name="eco" placeholder="Attendance" id="eco">
+                    <input type="number" name="eco" placeholder="CA" id="eco2">
+                    <input type="number" name="eco" placeholder="Exam" id="eco3">
+                    <input type="number" name="eco" id="eco4">
+                    <p id="grade-eco"></p>
+                </div>
+            </section>
+            <section class="section2">
+
+                <button onclick="totalCal()">TOTAL-SCORE</button>
+                <button onclick="overalCal()">OVER-ALL-SCORE</button>
+                <button onclick="averageCal()">AVERAGE</button>
+                <button onclick="gradeCal()">GRADE</button>
+
+            </section>
+        </div>
+        <h1 id="remarks"></h1>
+    </main>
+    <script src="gradingsystem.js"></script>
+</body>
+
+</html>
